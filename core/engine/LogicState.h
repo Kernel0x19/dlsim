@@ -1,6 +1,17 @@
 #pragma once
 
 #include <cstdint>
+
+
+// ============================================================
+// LogicState.h
+// DLSim — Digital Logic Simulator
+// 
+// Defines the four possible states of any signal in the circuit.
+// Every wire (Net) in DLSim carries exactly one of these states
+// at any point in simulated time.
+// ============================================================
+// 
 namespace dlsim {
     enum class LogicState : uint8_t{
         LOW = 0,
