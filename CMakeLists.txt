@@ -9,7 +9,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # ── Core simulation library ──────────────────────────────────
 # This library compiles identically for native and WebAssembly
 add_library(dlsim_core STATIC
-    # Files will be added here as we create them
+    dlsim_core STATIC
+    core/components/Gate.cpp
 )
 
 target_include_directories(dlsim_core PUBLIC
