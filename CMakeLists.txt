@@ -7,12 +7,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # ── Core simulation library ──────────────────────────────────
-# This library compiles identically for native and WebAssembly
 add_library(dlsim_core STATIC
-    dlsim_core STATIC
-    core/components/Gate.cpp
+    core/engine/BusResolver.cpp
+    core/engine/SimEngine.cpp
 )
 
 target_include_directories(dlsim_core PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+# ── Basic gate tests ─────────────────────────────────────────
+add_executable(test_basic_gates
+    tests/test_basic_gates.cpp
+)
+
+target_link_libraries(test_basic_gates PRIVATE dlsim_core)
+
+target_include_directories(test_basic_gates PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
