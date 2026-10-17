@@ -98,7 +98,7 @@ namespace dlsim {
 
             LogicState new_output = gate->evaluate();
 
-            for (Net* output_net : gate->outputs) {
+            for (Net* output_net : gate->output_nets()) {
                 schedule_event(
                     current_time + gate->propagation_delay_ps,
                     output_net,
