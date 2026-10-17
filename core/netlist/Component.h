@@ -37,6 +37,8 @@ namespace dlsim {
         float rotation = 0.0f;
 
         Component(std::string t_id, std::string i_id) : type_id(std::move(t_id)), instance_id(std::move(i_id)), pos_x(0.0f), pos_y(0.0f), rotation(0.0f) {}
+        
+        virtual ~Component() = default;
 
         Pin* get_pin(int number) {
             for (auto& pin : pins){
