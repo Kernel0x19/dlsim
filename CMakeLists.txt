@@ -37,3 +37,14 @@ target_include_directories(test_basic_gates PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${NLOHMANN_JSON_INCLUDE}
 )
+
+# ── Registry tests ───────────────────────────────────────────
+add_executable(test_registry
+    tests/test_registry.cpp
+)
+
+target_link_libraries(test_registry PRIVATE dlsim_core)
+target_include_directories(test_registry PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${NLOHMANN_JSON_INCLUDE}
+)
