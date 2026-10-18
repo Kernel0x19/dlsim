@@ -1,0 +1,13 @@
+{
+  "id": "AND",
+  "name": "AND Gate",
+  "category": "Basic Gates",
+  "package": "symbol",
+  "propagation_delay_ps": 9000,
+  "logic_class": "AND",
+  "pins": [
+    { "number": 1, "name": "A", "type": "INPUT" },
+    { "number": 2, "name": "B", "type": "INPUT" },
+    { "number": 3, "name": "Y", "type": "OUTPUT" }
+  ]
+}
