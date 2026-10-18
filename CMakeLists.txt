@@ -55,3 +55,14 @@ target_include_directories(dlsim_core PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/export
     ${NLOHMANN_JSON_INCLUDE}
 )
+
+# ── Exporter tests ───────────────────────────────────────────
+add_executable(test_exporter
+    tests/test_exporter.cpp
+)
+
+target_link_libraries(test_exporter PRIVATE dlsim_core)
+target_include_directories(test_exporter PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${NLOHMANN_JSON_INCLUDE}
+)
