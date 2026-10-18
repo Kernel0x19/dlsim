@@ -20,6 +20,7 @@ add_library(dlsim_core STATIC
     core/components/InputSwitch.cpp
     core/components/Clock.cpp
     core/components/ComponentRegistry.cpp
+    export/DlsimExporter.cpp 
 )
 
 target_include_directories(dlsim_core PUBLIC
@@ -46,5 +47,11 @@ add_executable(test_registry
 target_link_libraries(test_registry PRIVATE dlsim_core)
 target_include_directories(test_registry PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
+    ${NLOHMANN_JSON_INCLUDE}
+)
+
+target_include_directories(dlsim_core PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/export
     ${NLOHMANN_JSON_INCLUDE}
 )
