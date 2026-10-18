@@ -35,5 +35,7 @@ namespace dlsim {
                 next = LogicState::LOW; 
                 break;
         }
+
+        set_state(next, engine);
     }
 }
