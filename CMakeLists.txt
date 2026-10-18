@@ -66,3 +66,14 @@ target_include_directories(test_exporter PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${NLOHMANN_JSON_INCLUDE}
 )
+
+# ── Integration tests ────────────────────────────────────────
+add_executable(test_integration
+    tests/test_integration.cpp
+)
+
+target_link_libraries(test_integration PRIVATE dlsim_core)
+target_include_directories(test_integration PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${NLOHMANN_JSON_INCLUDE}
+)
