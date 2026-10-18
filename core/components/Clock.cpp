@@ -9,7 +9,7 @@
 
 namespace dlsim {
     void Clock::start(SimEngine *engine){
-        if (engine = nullptr) return;
+        if (engine == nullptr) return;
         if (outputs.empty()) return;
 
         current_state_ = LogicState::LOW;
