@@ -10,6 +10,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_library(dlsim_core STATIC
     core/engine/BusResolver.cpp
     core/engine/SimEngine.cpp
+    core/components/InputSwitch.cpp
+    core/components/Clock.cpp
 )
 
 target_include_directories(dlsim_core PUBLIC
@@ -22,7 +24,6 @@ add_executable(test_basic_gates
 )
 
 target_link_libraries(test_basic_gates PRIVATE dlsim_core)
-
 target_include_directories(test_basic_gates PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
