@@ -1,0 +1,24 @@
+{
+  "id": "74LS02",
+  "name": "Quad 2-input NOR Gate",
+  "category": "74LS Series",
+  "package": "DIP-14",
+  "propagation_delay_ps": 9000,
+  "logic_class": "NOR",
+  "pins": [
+    { "number": 1, "name": "1Y", "type": "OUTPUT" },
+    { "number": 2, "name": "1A", "type": "INPUT" },
+    { "number": 3, "name": "1B", "type": "INPUT" },
+    { "number": 4, "name": "2Y", "type": "OUTPUT" },
+    { "number": 5, "name": "2A", "type": "INPUT" },
+    { "number": 6, "name": "2B", "type": "INPUT" },
+    { "number": 7, "name": "GND", "type": "POWER" },
+    { "number": 8, "name": "3A", "type": "INPUT" },
+    { "number": 9, "name": "3B", "type": "INPUT" },
+    { "number": 10, "name": "3Y", "type": "OUTPUT" },
+    { "number": 11, "name": "4A", "type": "INPUT" },
+    { "number": 12, "name": "4B", "type": "INPUT" },
+    { "number": 13, "name": "4Y", "type": "OUTPUT" },
+    { "number": 14, "name": "VCC", "type": "POWER" }
+  ]
+}

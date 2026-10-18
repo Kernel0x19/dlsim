@@ -1,0 +1,24 @@
+{
+  "id": "74LS04",
+  "name": "Hex Inverter",
+  "category": "74LS Series",
+  "package": "DIP-14",
+  "propagation_delay_ps": 5000,
+  "logic_class": "NOT",
+  "pins": [
+    { "number": 1, "name": "1A", "type": "INPUT" },
+    { "number": 2, "name": "1Y", "type": "OUTPUT" },
+    { "number": 3, "name": "2A", "type": "INPUT" },
+    { "number": 4, "name": "2Y", "type": "OUTPUT" },
+    { "number": 5, "name": "3A", "type": "INPUT" },
+    { "number": 6, "name": "3Y", "type": "OUTPUT" },
+    { "number": 7, "name": "GND", "type": "POWER" },
+    { "number": 8, "name": "4Y", "type": "OUTPUT" },
+    { "number": 9, "name": "4A", "type": "INPUT" },
+    { "number": 10, "name": "5Y", "type": "OUTPUT" },
+    { "number": 11, "name": "5A", "type": "INPUT" },
+    { "number": 12, "name": "6Y", "type": "OUTPUT" },
+    { "number": 13, "name": "6A", "type": "INPUT" },
+    { "number": 14, "name": "VCC", "type": "POWER" }
+  ]
+}

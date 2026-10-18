@@ -1,0 +1,13 @@
+{
+  "id": "XOR",
+  "name": "XOR Gate",
+  "category": "Basic Gates",
+  "package": "symbol",
+  "propagation_delay_ps": 12000,
+  "logic_class": "XOR",
+  "pins": [
+    { "number": 1, "name": "A", "type": "INPUT" },
+    { "number": 2, "name": "B", "type": "INPUT" },
+    { "number": 3, "name": "Y", "type": "OUTPUT" }
+  ]
+}

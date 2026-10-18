@@ -1,0 +1,12 @@
+{
+  "id": "NOT",
+  "name": "NOT Gate",
+  "category": "Basic Gates",
+  "package": "symbol",
+  "propagation_delay_ps": 5000,
+  "logic_class": "NOT",
+  "pins": [
+    { "number": 1, "name": "A", "type": "INPUT" },
+    { "number": 2, "name": "Y", "type": "OUTPUT" }
+  ]
+}
